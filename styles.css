@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* Primary Colors */
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-dark-raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-rose-white: hsl(330, 100%, 98%);
+  --color-eggshell: hsl(30, 54%, 90%);
+  --color-light-grey: hsl(30, 18%, 87%);
+  --color-wenge-brown: hsl(30, 10%, 34%);
+  --color-dark-charcoal: hsl(24, 5%, 18%);
+  --color-text: hsl(32, 9%, 32%);
+}
+/* from https://github.com/abhi1322/recipe-website-frontend-mentors-/blob/main/style.css */
+
+header,nav,footer{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+  }
+  body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--color-eggshell);
+    color: var(--color-text);
+    
+  }
+  main{
+    background-color:  var(--color-rose-white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    align-self: center;
+    max-width: 45vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  img{
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  h1,h2{
+    font-family: "Young serif", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-dark-charcoal);
+  }
+  p{
+    margin: 0.3rem 0;
+    font-family: "Outfit", sans-serif;
+  }
+  li {
+    margin-bottom: 10px; 
+}
+#brief{
+    margin-bottom: 2rem;
+}
+
+li:last-child {
+    margin-bottom: 0; 
+}
+  .preparation{
+    background-color: #faedf6;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+  .preparation h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark-raspberry);
+    margin: 0;
+  }
+  h2{
+    color: var(--color-nutmeg);
+  }
+  
+  .preparation ul {
+    display: flex;
+    flex-direction: column;
+    color: hsl(31, 23%, 18%);
+  }
+  .preparation ul p {
+   margin-left: 1rem;
+  }
+  .ingredients ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .ingredients ul li p{
+    margin-left: 1rem;
+  }
+  hr{
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid var(--color-light-grey);
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+   td{
+    font-weight: 600;
+   }
+   th{
+    font-weight: 400;
+   }
+  th,td{
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-light-grey);
+  }
+  tr:last-child th,tr:last-child td{
+    border-bottom: none;
+  }
+
+  @media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    main{
+        padding: 0;
+    }
+
+}
